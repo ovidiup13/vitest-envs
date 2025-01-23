@@ -8,6 +8,43 @@ Experiments with vitest and different environments.
 - create units for react components
 - create units for basic hooks (stateless) and more complex hooks (stateful)
 
+## Setup
+
+```sh
+pnpm i
+```
+
+Run the units:
+
+```sh
+pnpm test
+```
+
+You should get a similar result:
+
+```sh
+❯ pnpm test
+
+> vitest-envs@1.0.0 test
+> vitest --run
+
+
+ RUN  v3.0.3
+
+ ✓  node  react/simple-hook.node.spec.ts (1 test) 8ms
+ ✓  node  react/component.node.spec.tsx (1 test) 5ms
+ ✓  node  react/state-hook.node.spec.ts (1 test) 3ms
+ ✓  happy-dom  src/react/simple-hook.spec.ts (1 test) 5ms
+ ✓  happy-dom  src/react/state-hook.spec.ts (1 test) 6ms
+ ✓  happy-dom  src/react/component.spec.tsx (1 test) 8ms
+
+ Test Files  6 passed (6)
+      Tests  6 passed (6)
+   Start at  01:09:28
+   Duration  570ms (transform 81ms, setup 267ms, collect 331ms, tests 35ms, environment 506ms, prepare 447ms)
+
+```
+
 ## Observations
 
 Overall, this setup works well.
