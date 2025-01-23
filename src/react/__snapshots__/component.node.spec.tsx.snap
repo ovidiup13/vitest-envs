@@ -1,0 +1,3 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SSR Component > renders the browser message 1`] = `"<div>Hello, World!</div>"`;

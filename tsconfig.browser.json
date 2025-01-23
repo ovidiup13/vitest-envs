@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "lib": ["es2022", "dom", "dom.iterable"]
+  },
+  "include": ["*.ts", "*.tsx"],
+  "exclude": ["*.spec.ts", "*.spec.tsx"]
+}
